@@ -1,8 +1,7 @@
 ﻿@page "/fetchdata"
-@using MasterDetailViewGridSample.Data
-@inject WeatherForecastService ForecastService
 
-<PageTitle>Weather forecast</PageTitle>
+@using Master_Detail_Grid.Data
+@inject WeatherForecastService ForecastService
 
 <h1>Weather forecast</h1>
 
@@ -38,10 +37,10 @@ else
 }
 
 @code {
-    private WeatherForecast[]? forecasts;
+    private WeatherForecast[] forecasts;
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateOnly.FromDateTime(DateTime.Now));
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
     }
 }
