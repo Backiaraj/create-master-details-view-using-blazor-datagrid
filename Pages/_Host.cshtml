@@ -1,24 +1,25 @@
 ﻿@page "/"
-@using Microsoft.AspNetCore.Components.Web
-@namespace MasterDetailViewGridSample.Pages
+@namespace Master_Detail_Grid.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master-Detail-Grid</title>
     <base href="~/" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link href="css/site.css" rel="stylesheet" />
-    <link href="MasterDetailViewGridSample.styles.css" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="favicon.png"/>
-    <link href="_content/Syncfusion.Blazor.Themes/bootstrap5.css" rel="stylesheet" />
-    <script src="_content/Syncfusion.Blazor.Core/scripts/syncfusion-blazor.min.js" type="text/javascript"></script>
-    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+    <link href="_content/Syncfusion.Blazor/styles/bootstrap4.css" rel="stylesheet" />
 </head>
 <body>
-    <component type="typeof(App)" render-mode="ServerPrerendered" />
+    <app>
+        <component type="typeof(App)" render-mode="ServerPrerendered" />
+    </app>
 
     <div id="blazor-error-ui">
         <environment include="Staging,Production">
