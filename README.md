@@ -1,33 +1,49 @@
-# Create Master Details View using Blazor DataGrid
+# Master-Details View with Blazor DataGrid
 
-A quick start Blazor Server App that helps you to create a master details view using the Syncfusion [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) component.
+A Blazor server application that demonstrates how to build a hierarchical master-details view using the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) component.
+
+## Overview
+
+This project provides a complete example of implementing a master-details relationship using two synchronized Blazor DataGrid components. When you select a customer from the master grid, the details grid automatically updates to show all orders associated with that customer. This pattern is commonly used in business applications to display hierarchical data in an intuitive, interactive way.
 
 ## Features
 
-* Fast rendering with virtualization and row/column virtualization
-* Sorting, filtering, grouping, and searching capabilities
-* Inline, batch, and dialog editing modes
-* Template columns, column resizing, reordering, and freezing
-* Excel and PDF export (requires additional Syncfusion export packages)
+- **Master-details relationship** — Select a customer in the master grid to view their orders
+- **Event-driven synchronization** — Real-time binding between grids using row selection events
+- **Sample data** — Pre-populated with customer and order information
+- **Responsive design** — Clean layout with Bootstrap styling
+- **Blazor Server** — Full server-side rendering with interactive components
 
 ## Prerequisites
 
-* Visual Studio 2022 or later
-* Visual Studio Code
+* [.NET SDK 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) or later
+* [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) or later
+* [Visual Studio Code](https://code.visualstudio.com/)
 
-## How to run the project
+## Getting Started
 
-1. Clone or download this repository to a location in your system.
-2. Open the solution file using the Visual Studio or Visual Studio code.
-3. Restore the NuGet packages by rebuilding the solution or run `dotnet restore`.
-4. Build the project to ensure there are no compilation errors.
-5. Run the project.
+### Clone the Repository
 
-Optional CLI Commands:
+```bash
+git clone https://github.com/SyncfusionExamples/create-master-details-view-using-blazor-datagrid.git
+cd create-master-details-view-using-blazor-datagrid
+```
 
-```powershell
+### Run with Visual Studio
+
+1. Open the solution file using Visual Studio 2022 or later.
+2. Restore the NuGet packages by rebuilding the solution.
+3. Build the project to ensure there are no compilation errors.
+4. Run the project.
+
+### Run with .NET CLI
+
+```bash
+# Restore dependencies
 dotnet restore
-dotnet build
+
+# Run the project
+dotnet run
 ```
 
 ## References
